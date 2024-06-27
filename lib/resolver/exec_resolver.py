@@ -20,7 +20,7 @@ BOLD="\033[01;01m"    		# Highlight
 WHITE="\033[1;37m"		# BOLD
 YELLOW="\033[1;33m"		# Warning
 PADDING="  "
-ip_regex = "^((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])$"
+ip_regex = r"^((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.){3}(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])$"
 
 def print_live(text):
     print(f"{PADDING}{YELLOW}{PADDING}⍥{PADDING}{RESET}[{GREEN}RESOLVER{RESET}]\t{text}")
